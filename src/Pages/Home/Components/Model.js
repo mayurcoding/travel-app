@@ -8,8 +8,7 @@ const Model = ({ handleClick }) => {
         </div>
         <h2>
           The modal in our travel website provides a quick and seamless way for
-          users to view booking details, trip highlights, or complete actions
-          like logging in or submitting forms—without leaving the current page.{" "}
+          users to view booking details.{" "}
         </h2>
       </div>
     </div>

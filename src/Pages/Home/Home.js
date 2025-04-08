@@ -4,6 +4,7 @@ import "../Home/Components/HomeStyles.css";
 import About from "./Components/About";
 import Service from "./Components/Service";
 import CallToAction from "./Components/CallToAction";
+import Faq from "./Components/Faq";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <About />
       <Service />
       <CallToAction />
+      <Faq />
     </div>
   );
 };
