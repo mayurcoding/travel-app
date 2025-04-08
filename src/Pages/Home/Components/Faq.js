@@ -51,9 +51,8 @@ const Faq = () => {
   ];
   const [selected, setSelected] = useState(null);
   const handleSelect = (i) => {
-    if (selected===i) {
+    if (selected === i) {
       return setSelected(null);
-        
     }
     setSelected(i);
   };
@@ -67,9 +66,13 @@ const Faq = () => {
               <div className="wrapper" key={i}>
                 <div className="question" onClick={() => handleSelect(i)}>
                   <h3>{item.question}</h3>
-                  <img src={require("../../../assets/faq.png")} alt="FAQ" />
+                  <img
+                    src={require("../../../assets/faq1.png")}
+                    alt="FAQ"
+                    className={selected === i ? "reverse" : ""}
+                  />
                 </div>
-                <div className={selected===i ? "answer show" : "answer"}>
+                <div className={selected === i ? "answer show" : "answer"}>
                   <p>{item.answers}</p>
                 </div>
               </div>

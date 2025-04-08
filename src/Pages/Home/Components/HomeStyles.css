@@ -227,7 +227,9 @@
   align-items: center;
 }
 .faq .item .question img {
-  width: 30px;
+  width: 20px;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+
 }
 
 .item .answers {
@@ -239,5 +241,10 @@
 .item .answers.show {
   height: auto;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+
+}
+.reverse {
+  transform: rotate(180deg);
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 
 }
