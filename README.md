@@ -1,8 +1,3 @@
-You got it! Here's a solid `README.md` template for your MERN travel website project — clean, structured, and beginner-friendly. You can customize it based on your project name and features.
-
----
-
-```markdown
 # 🌍 TravelMate
 
 **TravelMate** is a full-stack travel website built with the MERN (MongoDB, Express, React, Node.js) stack. It allows users to explore exciting destinations, plan their journeys, and book unforgettable adventures — all in one place.
@@ -41,18 +36,6 @@ You got it! Here's a solid `README.md` template for your MERN travel website pro
 
 ---
 
-## 📁 Project Structure
-
-```bash
-client/       # React frontend
-server/       # Node.js + Express backend
-├── models/   # Mongoose schemas
-├── routes/   # Express routes
-├── controllers/
-└── config/   # DB and environment setup
-```
-
----
 
 ## 🛠️ Setup Instructions
 
