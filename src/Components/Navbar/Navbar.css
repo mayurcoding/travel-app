@@ -1,13 +1,12 @@
 nav
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0px 30px;
-    height: 10vh;
-    position: fixed;
-    z-index: 9999999;
+    height: 8vh;
     width: 100%;
+    position: fixed;
     background-color: black;
 }
 nav .hamburger
