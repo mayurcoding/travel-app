@@ -9,8 +9,17 @@ const Navbar = () => {
   const handleClick = () => {
     setClick(!click);
   };
+
+  const [color, setColor] = useState(false);
+  const handleColor = () => {
+    if (window.scrollY >= 100) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
   return (
-    <nav>
+    <nav className={color ? "color" : ""}>
       <div className="logo">
         <h1>VoyageVista</h1>
       </div>
