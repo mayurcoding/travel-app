@@ -1,5 +1,3 @@
-Sure! Here's a clean and professional `README.md` file for your travel website built with the **MERN stack**, with a section that lists **all important source code files** and structure:
-
 ---
 
 ### 📄 `README.md`
