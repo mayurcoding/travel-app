@@ -115,7 +115,7 @@ node server.js
 
 ## 🧑‍💻 Author
 
-Made with ❤️ by [Your Name]  
+Made with ❤️ by Mayur Rastogi  
 Frameless glasses | MERN Developer | Loves to code
 
 ---
