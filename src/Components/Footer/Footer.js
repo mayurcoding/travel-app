@@ -1,14 +1,16 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
-import fb from "../../assets/fb.png";
+import facebook from "../../assets/facebook.webp";
+import istagram from "../../assets/istagram.png";
 import twitter from "../../assets/twitter.png";
 
 const Footer = () => {
-  const social = [fb, twitter];
+  const social = [facebook, istagram, twitter];
   return (
     <footer>
       <h1>VoyageVista</h1>
       <div className="links">
+        <h2> Usefull Links</h2> 
         <Link to="/">Home</Link> 
         <Link to="/training">Training</Link>
         <Link to="/pricing">Pricing</Link>

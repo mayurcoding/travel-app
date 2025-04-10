@@ -1,11 +1,15 @@
-import React from 'react'
+import Header from "../../Components/Header/Header";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Pricing = () => {
   return (
-    <div>
-      Pricing
-    </div>
-  )
-}
+    <>
+      <Navbar />
+      <Header heading="Pricing Page" />
+      <Footer />
+    </>
+  );
+};
 
-export default Pricing
+export default Pricing;

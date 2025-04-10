@@ -1,11 +1,15 @@
-import React from 'react'
+import Header from "../../Components/Header/Header";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Contact = () => {
   return (
-    <div>
-      Contact
-    </div>
-  )
-}
+    <>
+      <Navbar />
+      <Header heading="Contact Page" />
+      <Footer />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

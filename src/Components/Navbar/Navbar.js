@@ -35,10 +35,10 @@ const Navbar = () => {
         <h1>VoyageVista</h1>
       </div>
       <div className={click ? "menu active" : "menu"}>
-        <Link to="/">Home</Link>
-        <Link to="/training">Training</Link>
-        <Link to="/pricing">Pricing</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/ ">Home</Link>
+        <Link to="/Training">Training</Link>
+        <Link to="/Pricing">Pricing</Link>
+        <Link to="/Contact">Contact</Link>
       </div>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
