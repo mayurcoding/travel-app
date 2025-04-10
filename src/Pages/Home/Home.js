@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Service from "./Components/Service";
 import CallToAction from "./Components/CallToAction";
 import Faq from "./Components/Faq";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Service />
       <CallToAction />
       <Faq />
+      <Footer />
     </div>
   );
 };

@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FaTimes, FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [color, setColor] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
   };
 
-  const [color, setColor] = useState(false);
   const handleColor = () => {
     if (window.scrollY >= 100) {
       setColor(true);
@@ -18,6 +18,17 @@ const Navbar = () => {
       setColor(false);
     }
   };
+
+  // Use useEffect to manage the scroll event listener
+  useEffect(() => {
+    window.addEventListener("scroll", handleColor);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleColor);
+    };
+  }, []);
+
   return (
     <nav className={color ? "color" : ""}>
       <div className="logo">
