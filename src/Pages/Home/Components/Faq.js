@@ -27,35 +27,16 @@ const Faq = () => {
       answer:
         "Yes, public transportation is available and includes buses, trains, and taxis.",
     },
-    {
-      question: "What outdoor activities are popular here?",
-      answer:
-        "Popular outdoor activities include hiking, biking, and water sports.",
-    },
-    {
-      question: "Are there any guided tours available?",
-      answer:
-        "Yes, there are several guided tours available that cover various attractions and activities.",
-    },
-    {
-      question:
-        "What are the local customs and etiquette I should be aware of?",
-      answer:
-        "It's important to respect local customs, such as greeting people politely and being mindful of cultural practices.",
-    },
-    {
-      question: "Where can I find more information about this destination?",
-      answer:
-        "You can find more information on local tourism websites, travel blogs, and social media platforms.",
-    },
   ];
   const [selected, setSelected] = useState(null);
+
   const handleSelect = (i) => {
     if (selected === i) {
       return setSelected(null);
     }
     setSelected(i);
   };
+
   return (
     <>
       <h1 className="heading"> FAQ </h1>
@@ -72,8 +53,8 @@ const Faq = () => {
                     className={selected === i ? "reverse" : ""}
                   />
                 </div>
-                <div className={selected === i ? "answer show" : "answer"}>
-                  <p>{item.answers}</p>
+                <div className={selected === i ? "answers show" : "answers"}>
+                  <p>{item.answer}</p> {/* Fixed: Changed item.answers to item.answer */}
                 </div>
               </div>
             );
@@ -83,4 +64,5 @@ const Faq = () => {
     </>
   );
 };
+
 export default Faq;
