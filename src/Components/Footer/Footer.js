@@ -8,10 +8,12 @@ const Footer = () => {
   const social = [facebook, istagram, twitter];
   return (
     <footer>
-      <h1>VoyageVista</h1>
+      <h1>
+        <Link to="/">VoyageVista</Link>
+      </h1>
       <div className="links">
-        <h2> Usefull Links</h2> 
-        <Link to="/">Home</Link> 
+        <h2> Usefull Links</h2>
+        <Link to="/">Home</Link>
         <Link to="/training">Training</Link>
         <Link to="/pricing">Pricing</Link>
         <Link to="/contact">Contact</Link>
